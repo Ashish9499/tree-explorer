@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 14%;
+
+    --primary: 215 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 55% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 18% 93%;
+    --muted-foreground: 215 14% 46%;
+
+    --accent: 210 18% 93%;
+    --accent-foreground: 220 20% 14%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 70% 55%;
+
+    --radius: 0.5rem;
+
+    --tree-connector: 215 14% 76%;
+    --tree-badge-a: 215 70% 55%;
+    --tree-badge-b: 140 55% 52%;
+    --tree-badge-c: 140 55% 52%;
+    --tree-badge-d: 140 55% 52%;
+    --tree-node-shadow: 0 2px 8px -2px hsl(220 20% 14% / 0.08);
+    --tree-node-hover-shadow: 0 4px 16px -4px hsl(220 20% 14% / 0.14);
+    --tree-drag-over: 215 70% 55%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 20% 8%;
+    --foreground: 210 20% 96%;
+
+    --card: 222 18% 12%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 222 18% 12%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 215 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 55% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 18%;
+    --muted-foreground: 215 14% 60%;
+
+    --accent: 220 14% 18%;
+    --accent-foreground: 210 20% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 20%;
+    --input: 220 14% 20%;
+    --ring: 215 70% 55%;
+
+    --tree-connector: 215 14% 35%;
+    --tree-badge-a: 215 70% 55%;
+    --tree-badge-b: 140 55% 45%;
+    --tree-badge-c: 140 55% 45%;
+    --tree-badge-d: 140 55% 45%;
+    --tree-node-shadow: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --tree-node-hover-shadow: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+    --tree-drag-over: 215 70% 55%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  }
+}
