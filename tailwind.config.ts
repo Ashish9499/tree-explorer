@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["'IBM Plex Sans'", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +50,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        tree: {
+          connector: "hsl(var(--tree-connector))",
+          "badge-a": "hsl(var(--tree-badge-a))",
+          "badge-b": "hsl(var(--tree-badge-b))",
+          "badge-c": "hsl(var(--tree-badge-c))",
+          "badge-d": "hsl(var(--tree-badge-d))",
+          "drag-over": "hsl(var(--tree-drag-over))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +68,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      boxShadow: {
+        "tree-node": "var(--tree-node-shadow)",
+        "tree-node-hover": "var(--tree-node-hover-shadow)",
       },
       borderRadius: {
         lg: "var(--radius)",
